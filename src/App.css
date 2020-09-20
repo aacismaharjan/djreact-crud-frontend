@@ -1,0 +1,29 @@
+.card-body {
+  white-space: pre-line;
+}
+
+.card-accordion-header {
+  cursor: pointer;
+}
+
+.card-header .expand-icon {
+  display: none;
+}
+
+.card-accordion-header .expand-icon {
+  display: inline;
+}
+
+.card-accordion-header ~ .card-body {
+  max-height: 10rem;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}
+
+.card-accordion-header.expanded ~ .card-body {
+  max-height: 4000px;
+}
+
+.card-actions > span {
+  cursor: pointer;
+}
